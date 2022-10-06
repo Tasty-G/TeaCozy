@@ -1,36 +1,34 @@
 *{
 	margin: 0; 
 	padding: 0;
-	background-color: black; ;
-	font-family: Helvetica, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"; 
+	background-color: black; 
+	font-family: "Helvetica", "sans-serif"; 
 	font-size: 22px; 
-	color: seashell; 
-	opacity: 0.9; 
+	color: seashell;  
 }
 .header{
-	height: 70px; 
+	height: 700px;
+	width: 100%;
 }
 nav{
-	width: 100%; 
-	height: 69px; 
 	display: flex; 
 	justify-content: space-between; 
 	align-items: center; 
-	border-bottom: 1px solid gray; 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
+	padding: 4px 14px; 
+	border-bottom: solid 1px seashell; 
 }
-
-nav img{
+.logo{
 	height: 50px; 
 	margin-left: 10px; 
 }
-
+.banner{
+	width: 100%; 
+	margin: 1px 5px;  
+	background-position: center; 
+}
 .nav-links{
 	flex: 1; 
-	text-align: right; 
-	margin-right: 15px; 
+	text-align: right; 	
 }
 
 .nav-links ul li{
@@ -41,51 +39,22 @@ nav img{
 }
 
 .nav-links ul li a{
-	text-decoration: underline;
-	color: white; 
-}
-
-.mission{
-	width: 1200px; 
-	height: 700px; 
-	margin: 0 auto; 
-	position: relative; 
-	background-image: url("images/img-mission-background.webp");
-	background-position: center; 
-	background-repeat: no-repeat; 
-	background-size: cover;
-}
-
-.text-box{
-	width: 100%; 
 	color: #fff; 
-	opacity: 0.9; 
-	position: absolute; 
-	top: 50%; 
-	left: 50%;
-	transform: translate(-50%, -50%); 
-	text-align: center; 
+	font-size: 13px; 
+	text-decoration: none; 
 }
 
-.text-box h2{
-	font-size: 40px; 
-	font-weight: bold; 
-	font-style: italic; 
-	padding: 12px 12px; 
-	margin-top: 12px; 	
-	text-align: center; 
+.nav-links ul li::after{
+	content: ''; 
+	width: 0%; 
+	height: 2px; 
+	background: seashell; 
+	display: block; 
+	margin: auto;
+	transition: 0.5s; 
 }
 
-.text-box h4{
-	font-size: 22px; 
-	padding: 12px 12px; 
-	margin-bottom: 12px; 
-	text-align: center; 
+.nav-links ul li:hover::after{
+	width: 100%; 
 }
-
-
-
-
-
-
 

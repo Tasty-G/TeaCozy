@@ -1,89 +1,31 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
-	<title>Tea Cozy</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Tea Cozy</title>
 </head>
 <body>
-	<section class="header">
-		<nav>
-			<a href="index.html"><img src="images/img-tea-cozy-logo.webp" alt="" class="logo"></a>
-			<div class="nav-links" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
-				<ul>
-					<li><a href="#">Mission</a></li>
-					<li><a href="#">Featured Tea</a></li>
-					<li><a href="#">Location</a></li>
-				</ul>			
-			</div>
-			<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
-		<div class="container"></div>
-	</section>	
-<!--JavaScript for Toggle Menu-->
-<script>
-		var navLinks = document.getElementById("navLinks"); 
+	<nav>
+		<input id="nav-toggle" type="checkbox">
+		<div class="logo"><img src="images/img-tea-cozy-logo.webp" alt=""></div>
+		<ul class="links">
+			<li><a href="#Mission">Mission</a></li>
+			<li><a href="#featuredTea">Featured Tea</a></li>
+			<li><a href="#Locations">Locations</a></li>
+		</ul>
+		<label for="nav-toggle" class="icon-burger"> 
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</label>
+	</nav>
+	<div class="container">
 		
-		function showMenu(){
-			navLinks.style.right = "0"; 
-		}
-		
-		function hideMenu(){
-			navLinks.style.right = "0"; 
-	}
-</script>
-<section id="tea">
-	<div class="row">
-		<div class="flex-item">
-			<img src="images/img-berryblitz.webp" alt="">
-			<p><em>Fall Berry Blitz Tea</em></p>
-		</div>
-		<div class="flex-item">
-			<img src="images/img-spiced-rum.jpeg" alt="">
-			<p><em>Fall Berry Blitz Tea</em></p>
-		</div>
-		<div class="flex-item">
-			<img src="images/img-donut.webp" alt="">
-			<p><em>Fall Berry Blitz Tea</em></p>
-		</div>
-		<div class="flex-item">
-			<img src="images/img-bedford-bizarre.jpeg" alt="">
-			<p><em>Fall Berry Blitz Tea</em></p>
-		</div>
-		<div class="flex-item">
-			<img src="images/img-donut.webp" alt="">
-			<p><em>Fall Berry Blitz Tea</em></p>
-		</div>
-	</div>	
-</section>
-<section id="locations">
-	<h2>Locations</h2>
-	<div class="row">
-		<div class="item">
-			<h3>Downtown</h3>
-			<h4>384 West 4th St</h4>
-			<h4>Suite 108</h4>
-			<h4>Portland, Maine</h4>
-		</div>
-		<div class="item">
-			<h3>Downtown</h3>
-			<h4>384 West 4th St</h4>
-			<h4>Suite 108</h4>
-			<h4>Portland, Maine</h4>
-		</div>
-		<div class="item">
-			<h3>Downtown</h3>
-			<h4>384 West 4th St</h4>
-			<h4>Suite 108</h4>
-			<h4>Portland, Maine</h4>
-		</div>
+		<h2>Our Mission</h2>
+		<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quod quos, architecto inventore quidem nesciunt?</h4>
 	</div>
-
-</section>
 </body>
 </html>
-

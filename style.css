@@ -9,10 +9,10 @@ body{
 	color: seashell; 
 }
 
-.container{
+.container, .rows{
 	position: relative; 
 	top: 70px; 
-	height: 90vh; 
+	height: 100vh; 
 }
 .container{
 	display: block; 
@@ -122,10 +122,6 @@ nav .icon-burger .line{
 	}
 }
 
-
-
-
-
 .textbox{
 	width: 100%; 
 	z-index: 2; 
@@ -136,7 +132,6 @@ nav .icon-burger .line{
 	transform: translate(-50%, -50%); 
 	background-color: rgba(0,0,0,.8); 
 	padding: 25px 0; 
-	margin-bottom: 14px; 
 }
 
 .textbox h2{
@@ -149,11 +144,78 @@ nav .icon-burger .line{
 	font-weight: 400; 
 }
 
+#tea{
+	width: 90%;
+	height: 500px; 
+	position: relative; 
+}
+.row{
+	width: 100%; 
+	text-align: center; 
+	margin: auto; 
+	padding: 20px 5px; 
+
+}
 
 
+.img-box{
+	display: flex; 
+	flex-wrap: wrap; 
+	direction: row; 
+	justify-content: center;  
+	padding-bottom: 20px; 
+
+	width: 100%; 
+}
+
+.img-item img {
+	width: 300px; 
+	height: 200px; 
+	margin: 5px; 
+}
+
+.img-item  h4{
+	padding: 5px; 
+	
+}
+
+.locations{
+	position: relative; 
+	width: 90%; 
+	margin: auto; 
+}
+.locations h2{
+	text-align: center; 
+}
+.row-location{
+	width: 100%; 
+	height: 500px; 
+	margin: auto; 
+	background-image: url("images/img-locations-background.webp");
+	background-position: center; 
+	background-size: cover; 
+	display: flex; 
+	justify-content: space-around; 
+	align-items: center; 
+}
+
+.flex-item{
+	flex-basis: 30%; 
+	background-color: rgba(0,0,0,0.8);
+	width: 300px;
+	height: 200px; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	text-align: center;
+}
 
 
-
+@media screen and (max-width: 500px){
+	.flex-item{
+		
+	}
+}
 
 
 	
